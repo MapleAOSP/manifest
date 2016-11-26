@@ -10,6 +10,9 @@
   <remote  name="ae"
            fetch="https://github.com/AndroidExternal/" 
            revision="ng" />
+  <remote  name="dtc"
+           fetch="https://bitbucket.com/dragon-tc/" 
+           revision="master" />
 
   <default revision="refs/tags/android-7.1.0_r7"
            remote="aosp"
@@ -462,6 +465,7 @@
   <project path="platform_testing" name="platform/platform_testing" />
   <project path="prebuilts/android-emulator" name="platform/prebuilts/android-emulator" groups="pdk-fs" clone-depth="1" />
   <project path="prebuilts/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" groups="pdk" />
+  <project path="prebuilts/clang/host/linux-x86/3.8-dtc" name="dragontc-3.8" remote="dtc" groups="pdk" />
   <project path="prebuilts/deqp" name="platform/prebuilts/deqp" groups="pdk-fs" />
   <project path="prebuilts/devtools" name="platform/prebuilts/devtools" groups="pdk-fs" />
   <project path="prebuilts/eclipse" name="platform/prebuilts/eclipse" groups="pdk" />
